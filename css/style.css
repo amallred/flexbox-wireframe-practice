@@ -1,1 +1,46 @@
 @import url("./reset.css");
+
+body {
+    background: gray;
+}
+
+h1, h2, h3{
+    color: white;
+    font-size: 2em;
+    font-family: Helvetica;
+}
+h3{
+    font-size: 1.5em;
+}
+
+div, aside, footer{
+    border-radius: 10px;    
+    width: 80%;    
+    text-align: center;
+    margin: .75rem;
+}
+
+.header {
+    background: purple;
+    height: 10%;
+}
+
+.main-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: .5em;    
+}
+
+.articles{
+    background: green;
+}
+.article{
+    background: #ec4560;
+}
+aside{
+    background: blue;
+}
+footer {
+    background: orange;
+}
