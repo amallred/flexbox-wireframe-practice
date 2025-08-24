@@ -2,45 +2,72 @@
 
 body {
     background: gray;
+    text-align: center;
+    
+    box-sizing: border-box;
 }
 
 h1, h2, h3{
     color: white;
     font-size: 2em;
     font-family: Helvetica;
+    /* text-align: center; */
 }
 h3{
     font-size: 1.5em;
 }
 
-div, aside, footer{
+header, div, aside, footer{
     border-radius: 10px;    
-    width: 80%;    
-    text-align: center;
-    margin: .75rem;
+    width: 80%;
+    margin: .5em auto;    
 }
 
-.header {
+header {
     background: purple;
     height: 10%;
 }
 
 .main-content {
+    height: 90%;
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
-    padding: .5em;    
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 10px;
 }
 
 .articles{
     background: green;
-}
+    padding: 1em;
+    }
+
 .article{
     background: #ec4560;
+    width: 100%;
+    height: 15vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
 }
+
 aside{
     background: blue;
+    min-width: .3vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
 }
+
 footer {
     background: orange;
+}
+@media screen and (min-width: 700px){
+    .main-content{
+        flex-direction: row-reverse;
+        flex-wrap: nowrap;
+        margin: auto;
+        width: 80%;
+    }
 }
