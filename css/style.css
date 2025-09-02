@@ -1,9 +1,8 @@
 @import url("./reset.css");
 
-body {
+.allContent {
     background: gray;
     text-align: center;
-    
     box-sizing: border-box;
 }
 
@@ -20,6 +19,7 @@ h3{
 header, div, aside, footer{
     border-radius: 10px;    
     width: 80%;
+    min-width: 100px;
     margin: .5em auto;    
 }
 
@@ -41,6 +41,7 @@ header {
 .articles{
     background: green;
     padding: 1em;
+    min-width: 130px;
     }
 
 .article{
